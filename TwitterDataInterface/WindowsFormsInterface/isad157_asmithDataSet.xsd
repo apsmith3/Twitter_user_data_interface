@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="isad157_asmithDataSet" targetNamespace="http://tempuri.org/isad157_asmithDataSet.xsd" xmlns:mstns="http://tempuri.org/isad157_asmithDataSet.xsd" xmlns="http://tempuri.org/isad157_asmithDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="isad157_asmithConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="isad157_asmithConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsInterface.Properties.Settings.GlobalReference.Default.isad157_asmithConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tweet_hashtagsTableAdapter" GeneratorDataComponentClassName="tweet_hashtagsTableAdapter" Name="tweet_hashtags" UserDataComponentName="tweet_hashtagsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="isad157_asmithConnectionString (Settings)" DbObjectName="isad157_asmith.tweet_hashtags" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Tweetid`, `Hashtags` FROM `tweet_hashtags`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tweet_urlsTableAdapter" GeneratorDataComponentClassName="tweet_urlsTableAdapter" Name="tweet_urls" UserDataComponentName="tweet_urlsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="isad157_asmithConnectionString (Settings)" DbObjectName="isad157_asmith.tweet_urls" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Tweetid`, `URLs` FROM `tweet_urls`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tweetsTableAdapter" GeneratorDataComponentClassName="tweetsTableAdapter" Name="tweets" UserDataComponentName="tweetsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="isad157_asmithConnectionString (Settings)" DbObjectName="isad157_asmith.tweets" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Tweetid`, `Userid`, `TweetText`, `TweetDate`, `Retweet`, `Suorce` FROM `tweets`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="twitter_usersTableAdapter" GeneratorDataComponentClassName="twitter_usersTableAdapter" Name="twitter_users" UserDataComponentName="twitter_usersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="isad157_asmithConnectionString (Settings)" DbObjectName="isad157_asmith.twitter_users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Userid`, `UserName`, `UserScreenName`, `Datejoined` FROM `twitter_users`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="isad157_asmithDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="isad157_asmithDataSet" msprop:Generator_UserDSName="isad157_asmithDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tweet_hashtags" msprop:Generator_TableClassName="tweet_hashtagsDataTable" msprop:Generator_TableVarName="tabletweet_hashtags" msprop:Generator_TablePropName="tweet_hashtags" msprop:Generator_RowDeletingName="tweet_hashtagsRowDeleting" msprop:Generator_RowChangingName="tweet_hashtagsRowChanging" msprop:Generator_RowEvHandlerName="tweet_hashtagsRowChangeEventHandler" msprop:Generator_RowDeletedName="tweet_hashtagsRowDeleted" msprop:Generator_UserTableName="tweet_hashtags" msprop:Generator_RowChangedName="tweet_hashtagsRowChanged" msprop:Generator_RowEvArgName="tweet_hashtagsRowChangeEvent" msprop:Generator_RowClassName="tweet_hashtagsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tweet_urls" msprop:Generator_TableClassName="tweet_urlsDataTable" msprop:Generator_TableVarName="tabletweet_urls" msprop:Generator_TablePropName="tweet_urls" msprop:Generator_RowDeletingName="tweet_urlsRowDeleting" msprop:Generator_RowChangingName="tweet_urlsRowChanging" msprop:Generator_RowEvHandlerName="tweet_urlsRowChangeEventHandler" msprop:Generator_RowDeletedName="tweet_urlsRowDeleted" msprop:Generator_UserTableName="tweet_urls" msprop:Generator_RowChangedName="tweet_urlsRowChanged" msprop:Generator_RowEvArgName="tweet_urlsRowChangeEvent" msprop:Generator_RowClassName="tweet_urlsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tweets" msprop:Generator_TableClassName="tweetsDataTable" msprop:Generator_TableVarName="tabletweets" msprop:Generator_TablePropName="tweets" msprop:Generator_RowDeletingName="tweetsRowDeleting" msprop:Generator_RowChangingName="tweetsRowChanging" msprop:Generator_RowEvHandlerName="tweetsRowChangeEventHandler" msprop:Generator_RowDeletedName="tweetsRowDeleted" msprop:Generator_UserTableName="tweets" msprop:Generator_RowChangedName="tweetsRowChanged" msprop:Generator_RowEvArgName="tweetsRowChangeEvent" msprop:Generator_RowClassName="tweetsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="twitter_users" msprop:Generator_TableClassName="twitter_usersDataTable" msprop:Generator_TableVarName="tabletwitter_users" msprop:Generator_TablePropName="twitter_users" msprop:Generator_RowDeletingName="twitter_usersRowDeleting" msprop:Generator_RowChangingName="twitter_usersRowChanging" msprop:Generator_RowEvHandlerName="twitter_usersRowChangeEventHandler" msprop:Generator_RowDeletedName="twitter_usersRowDeleted" msprop:Generator_UserTableName="twitter_users" msprop:Generator_RowChangedName="twitter_usersRowChanged" msprop:Generator_RowEvArgName="twitter_usersRowChangeEvent" msprop:Generator_RowClassName="twitter_usersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
